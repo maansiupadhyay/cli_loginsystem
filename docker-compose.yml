@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  cli-login:
+    build: .
+    container_name: cli-login-app
+    stdin_open: true
+    tty: true
+    volumes:
+      - cli_data:/data
+    environment:
+      - LOCKOUT_THRESHOLD=5
+      - LOCKOUT_DURATION_MINS=15
+      - SESSION_TIMEOUT_MINS=30
+
+volumes:
+  cli_data:
