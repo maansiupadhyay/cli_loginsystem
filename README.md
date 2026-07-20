@@ -189,6 +189,4 @@ ok      cli-login-system/internal/auth  9.124s
 
 ---
 
-## Submission Details
 
-**Important**: Send the link to the shared repository or package submission to **hr@osto.one**.
